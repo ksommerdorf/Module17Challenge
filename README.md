@@ -26,19 +26,71 @@ RandomOverSampler randomly selects minority classes and adds them to the trainin
 * F1 Score: 
   * High Risk: 0.02
   * Low Risk: 0.74
+
 ### SMOTE 
 Synthetic Minority Oversample Technique, like RandomOverSampler, increases the size of the minority class by synthesizes new values based on the closest existing value.
+* Balanced Accuracy Score: 66.3%
+* Precision Score:  
+  * High Risk: 0.01 (1% of the predicted high risk applicants are actually high risk)
+  * Low Risk: 1.00 (100% of the predicted low risk applicants are actually low risk)
+* Recall Score: 
+  * High Risk: 0.63 (63% of high risk applicants are classified as high risk)
+  * Low Risk: 0.69 (69% of low risk applicants are classified as low risk)
+* F1 Score: 
+  * High Risk: 0.02
+  * Low Risk: 0.82
 
 ### ClusterCentroid
 An algorithm that decreases the size of the majority class by generating synthetic data points, centroids, that represent clusters of the sample data.
+* Balanced Accuracy Score: 54.5%
+* Precision Score:  
+  * High Risk: 0.01 (1% of the predicted high risk applicants are actually high risk)
+  * Low Risk: 1.00 (100% of the predicted low risk applicants are actually low risk)
+* Recall Score: 
+  * High Risk: 0.69 (69% of high risk applicants are classified as high risk)
+  * Low Risk: 0.40 (40% of low risk applicants are classified as low risk)
+* F1 Score: 
+  * High Risk: 0.01
+  * Low Risk: 0.57
 
 ### SMOTEEN
 Synthetic Minority Oversampling Tecnique and Edited NearestNeighbors model combines aspects of both oversampling using SMOTE and undersampling by dropping out the outliers of each of the classes of data.
+* Balanced Accuracy Score: 64.5%
+* Precision Score:  
+  * High Risk: 0.01 (1% of the predicted high risk applicants are actually high risk)
+  * Low Risk: 1.00 (100% of the predicted low risk applicants are actually low risk)
+* Recall Score: 
+  * High Risk: 0.72 (72% of high risk applicants are classified as high risk)
+  * Low Risk: 0.57 (57% of low risk applicants are classified as low risk)
+* F1 Score: 
+  * High Risk: 0.02
+  * Low Risk: 0.72
 
 ### BalancedRandomForestClassifier
 A model that randomly undersamples each boostrap sample by creating 2 trees of the same size and equal size to the minority class to represent one for the majority class and one for the minority class. 
+* Balanced Accuracy Score: 78.8%
+* Precision Score:  
+  * High Risk: 0.04 (4% of the predicted high risk applicants are actually high risk)
+  * Low Risk: 1.00 (100% of the predicted low risk applicants are actually low risk)
+* Recall Score: 
+  * High Risk: 0.67 (67% of high risk applicants are classified as high risk)
+  * Low Risk: 0.91 (91% of low risk applicants are classified as low risk)
+* F1 Score: 
+  * High Risk: 0.07
+  * Low Risk: 0.95
 
 ### EasyEnsembleClassifier
 A model that builds sequences of classifiers by resampling the majority class. The classifiers are an ensembler of adaptive boosting (AdaBoost) learners trained on different balanced (through undersampling) boostrap examples.
+* Balanced Accuracy Score: 92.5%
+* Precision Score:  
+  * High Risk: 0.07 (7% of the predicted high risk applicants are actually high risk)
+  * Low Risk: 1.00 (100% of the predicted low risk applicants are actually low risk)
+* Recall Score: 
+  * High Risk: 0.91 (91% of high risk applicants are classified as high risk)
+  * Low Risk: 0.94 (94% of low risk applicants are classified as low risk)
+* F1 Score: 
+  * High Risk: 0.14
+  * Low Risk: 0.97
 
 ## Summary 
+
