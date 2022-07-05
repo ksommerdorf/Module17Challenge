@@ -35,7 +35,7 @@ RandomOverSampler randomly selects minority classes and adds them to the trainin
 ![1 3](https://user-images.githubusercontent.com/57520471/177226639-5d94690d-18ba-4531-88fa-e116059e23c9.png)
 
 ### SMOTE 
-Synthetic Minority Oversample Technique, like RandomOverSampler, increases the size of the minority class by synthesizes new values based on the closest existing value.
+Synthetic Minority Oversample Technique, like RandomOverSampler, increases the size of the minority class by synthesizing new values based on the closest existing value.
 * Balanced Accuracy Score: 66.3%
 * Precision Score:  
   * High Risk: 0.01 (1% of the predicted high risk applicants are actually high risk)
