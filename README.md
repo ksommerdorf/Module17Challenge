@@ -4,7 +4,7 @@ Fast Lending is a peer-to-peer leading services company who is looking to utiliz
 
 ## Results
 The models are evaluated on their effectiveness based on these four scores:
-* Balanced Accuracy Score: measures how accurate the model predicts credit risk.
+* Balanced Accuracy Score: measures how accurate the model predicts credit risk
 * Precision Score: 
   * For High Risk: True Positive/(True Positive + False Positive)
   * For Low Risk: True Negative/(True Negative + False Negative
