@@ -7,7 +7,10 @@ The models are evaluated on their effectiveness based on these three scores:
 * Balanced Accuracy Score: measures how accurate the model predicts credit risk.
 * Precision Score: 
   * For High Risk: True Positive/(True Positive + False Positive)
-  * For Low Risk: True Negative/(True Negative + False Negative)
+  * For Low Risk: True Negative/(True Negative + False Negative
+  
+![example1](https://user-images.githubusercontent.com/57520471/177226605-c34a4d10-5241-49e5-a646-aaa8339f2816.png)
+  
 * Recall (or Sensitivity) Score: 
   * For High Risk: True Positive/(True Positive + False Negative)
   * For Low Risk: True Negative/(True Negative + False Positive)
@@ -26,6 +29,10 @@ RandomOverSampler randomly selects minority classes and adds them to the trainin
 * F1 Score: 
   * High Risk: 0.02
   * Low Risk: 0.74
+  
+![1 1](https://user-images.githubusercontent.com/57520471/177226637-851ec4ea-21ae-4f0d-84cb-0148021379bb.png)
+![1 2](https://user-images.githubusercontent.com/57520471/177226638-f5a840a5-e761-4bf0-b965-7bf093ea9733.png)
+![1 3](https://user-images.githubusercontent.com/57520471/177226639-5d94690d-18ba-4531-88fa-e116059e23c9.png)
 
 ### SMOTE 
 Synthetic Minority Oversample Technique, like RandomOverSampler, increases the size of the minority class by synthesizes new values based on the closest existing value.
@@ -39,6 +46,10 @@ Synthetic Minority Oversample Technique, like RandomOverSampler, increases the s
 * F1 Score: 
   * High Risk: 0.02
   * Low Risk: 0.82
+ 
+![2 1](https://user-images.githubusercontent.com/57520471/177226678-5156eecb-9929-430d-b6d8-ce5e1b2b112b.png)
+![2 2](https://user-images.githubusercontent.com/57520471/177226686-fbebe737-5abe-41d5-919f-e8834505c0ad.png)
+![2 3](https://user-images.githubusercontent.com/57520471/177226690-1a7e4f2a-e422-4d11-a58d-4baa7139182d.png)
 
 ### ClusterCentroid
 An algorithm that decreases the size of the majority class by generating synthetic data points, centroids, that represent clusters of the sample data.
@@ -52,6 +63,10 @@ An algorithm that decreases the size of the majority class by generating synthet
 * F1 Score: 
   * High Risk: 0.01
   * Low Risk: 0.57
+  
+![3 1](https://user-images.githubusercontent.com/57520471/177226720-e35cece0-4b25-4059-9d47-8ffe5a6905d8.png)
+![3 2](https://user-images.githubusercontent.com/57520471/177226722-89fbe3a8-9d3e-47f3-88e5-203ed844ee03.png)
+![3 3](https://user-images.githubusercontent.com/57520471/177226723-acd60e73-5cf0-4cb0-8bd0-e3f773327283.png)
 
 ### SMOTEEN
 Synthetic Minority Oversampling Technique and Edited Nearest Neighbors model combines aspects of both oversampling using SMOTE and undersampling by dropping out the outliers of each of the classes of data.
@@ -65,6 +80,10 @@ Synthetic Minority Oversampling Technique and Edited Nearest Neighbors model com
 * F1 Score: 
   * High Risk: 0.02
   * Low Risk: 0.72
+  
+![4 1](https://user-images.githubusercontent.com/57520471/177226747-a890a12c-6522-4c9a-8da8-cf424ac50bde.png)
+![4 2](https://user-images.githubusercontent.com/57520471/177226749-bcf9f829-d2a5-4d00-8ae8-b0892aefabd2.png)
+![4 3](https://user-images.githubusercontent.com/57520471/177226750-13ce2d83-bebd-4c69-8c90-b7712903f1b1.png)
 
 ### BalancedRandomForestClassifier
 A model that randomly undersamples each bootstrap sample by creating 2 trees of the same size and equal size to the minority class to represent one for the majority class and one for the minority class. 
@@ -78,6 +97,10 @@ A model that randomly undersamples each bootstrap sample by creating 2 trees of 
 * F1 Score: 
   * High Risk: 0.07
   * Low Risk: 0.95
+  
+![5 1](https://user-images.githubusercontent.com/57520471/177226767-97c6dcce-5fac-4d20-a322-5ca7c2154ec8.png)
+![5 2](https://user-images.githubusercontent.com/57520471/177226769-f4b6fd53-1406-4a60-87ff-4c96b90694a7.png)
+![5 3](https://user-images.githubusercontent.com/57520471/177226771-08dd8259-fc4d-4162-b27b-1b1172cbe6fd.png)
 
 ### EasyEnsembleClassifier
 A model that builds sequences of classifiers by resampling the majority class. The classifiers are an ensembler of adaptive boosting (AdaBoost) learners trained on different balanced (through undersampling) bootstrap examples.
@@ -91,6 +114,10 @@ A model that builds sequences of classifiers by resampling the majority class. T
 * F1 Score: 
   * High Risk: 0.14
   * Low Risk: 0.97
+  
+![6 1](https://user-images.githubusercontent.com/57520471/177226784-c5cf6eb8-f3cc-42fd-9974-eaccd90ea7b6.png)
+![6 2](https://user-images.githubusercontent.com/57520471/177226785-04ccb739-66f5-4a63-b45b-41ce833eb0f3.png)
+![6 3](https://user-images.githubusercontent.com/57520471/177226787-c9a2467a-83e1-426f-acde-1cf5d2589e84.png)
 
 ## Summary 
 Ranking of models from most accurate to least accurate for identifying high risk candidates:
