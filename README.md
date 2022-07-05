@@ -29,7 +29,7 @@ RandomOverSampler randomly selects minority classes and adds them to the trainin
 * F1 Score: 
   * High Risk: 0.02
   * Low Risk: 0.74
-  
+ 
 ![1 1](https://user-images.githubusercontent.com/57520471/177226637-851ec4ea-21ae-4f0d-84cb-0148021379bb.png)
 ![1 2](https://user-images.githubusercontent.com/57520471/177226638-f5a840a5-e761-4bf0-b965-7bf093ea9733.png)
 ![1 3](https://user-images.githubusercontent.com/57520471/177226639-5d94690d-18ba-4531-88fa-e116059e23c9.png)
