@@ -3,7 +3,7 @@
 Fast Lending is a peer-to-peer leading services company who is looking to utilize machine learning to predict credit risk. The goal is to provide a quicker and more reliable loan experience and to lead to a more accurate identification of good candidates for loans leading to lower default rates. Credit risk is an inherently unbalanced classification problem, as good loans outweigh risky loans. Therefore, this project employed different supervised machine learning techniques to train and evaluate models with unbalanced classes using python libraries, imbalanced-learn and scikit-learn in order to determine the most accurate model.
 
 ## Results
-The models are evaluated on their effectiveness based on these three scores:
+The models are evaluated on their effectiveness based on these four scores:
 * Balanced Accuracy Score: measures how accurate the model predicts credit risk.
 * Precision Score: 
   * For High Risk: True Positive/(True Positive + False Positive)
